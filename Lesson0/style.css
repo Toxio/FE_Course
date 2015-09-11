@@ -1,0 +1,106 @@
+#wrapper{
+
+	width: 571px;
+	height: 371px;
+	position: relative;
+	background-color: #f7f7f7 ;
+	margin:  10% auto;
+	border: 1px solid #c9c9c9;
+}
+
+#mainBox{
+	width: 553px;
+	height: 353px;
+	background-color: white ;
+	margin: 8px auto;
+	border: 1px solid #d9d9d9;
+}
+
+#gradient{	
+	width: 553px;
+	height: 30px;
+	background: linear-gradient(to bottom, rgba(237,237,237,0.85) 0%, rgba(206,199,236,0.85) 0%, rgba(229,227,237,0.85) 17%, rgba(237,237,237,0.81) 23%, rgba(237,237,237,0.43) 88%, rgba(237,237,237,0.43) 100%);
+}
+
+.leftDistance{
+	margin-left:33px;
+	margin-right: 33px;
+	font-family: Tahoma;
+}
+
+#bodyHead{
+	height: 53px;
+}
+
+#name{
+	color: #4089a8;	
+	float: left;		
+	font-size:30px;
+	margin-top: 7px; 
+}
+
+#hederRight{
+	float: right;
+	color: #A1A1A1;	
+	margin-top: 20px;
+	font-size: 15px;		
+}
+
+.line{
+	background-color:#CACACA;	
+	border: none;
+	height: 1px;
+}
+
+#mainText{
+	font-size: 12px;
+	color: #4f4f4f;	
+	text-align: justify;
+	line-height: 1.5;
+}
+
+#mainText p{
+	margin-top: 18px;
+}
+
+#lastLine{
+	margin-top: 22px;
+}
+
+#footer{
+	line-height: 0.6;
+	font-size: 11px;
+	color: #949494;
+}
+
+#dataPic{
+	float: left;
+	margin-top: -5px;
+	width: 17px;
+    height: 15px;
+    background: url(sprite0.png) no-repeat -40px 0; 
+}
+
+#dataText{
+	margin-top: 16px;
+	margin-left:40;
+}
+
+#mailPic{
+	float: left;
+	margin-top: -5px;
+	width: 17px;
+    height: 15px;
+    background: url(sprite0.png) no-repeat -60px 0;
+}
+
+#mailText{
+	margin-left:40;
+}
+
+#picLogo{
+	float: right;
+    background: url(sprite0.png) 0 0 no-repeat; 
+    width: 36px;
+    height: 36px;
+}
