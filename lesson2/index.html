@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<title>Registration</title>
+		 <meta charset="utf-8">
+	</head>
+	<body style="background-color: #f7f7f7">
+		<div class="container">
+			<h2>Регистрация</h2>
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label class="control-label col-xs-2" for="FIO">ФИО*</label>
+			    <div class="col-xs-6">
+			      <input required type="text" class="form-control" id="FIO" placeholder="ФИО">
+			    </div>
+			  </div>
+
+			  
+			  <div class="form-group">
+			    <label class="control-label col-xs-2" for="login">Логин*</label>
+			    <div class="col-xs-6">
+			      <input required type="text" class="form-control" id="login" placeholder="Логин">
+			    </div>
+			  </div>
+
+			   <div class="form-group">
+			    <label class="control-label col-xs-2" for="inputEmail">Email*</label>
+			    <div class="col-xs-6">
+			      <input required type="email" class="form-control" id="inputEmail" placeholder="Email">
+			    </div>
+			  </div>
+
+			   <div class="form-group">
+			    <label class="control-label col-xs-2" for="inputPassword">Пароль*</label>
+			     <div class="col-xs-3">
+			      <input required type="password" class="form-control" id="inputPassword" placeholder="Введите пароль">			      
+			     </div>
+			     <div class="col-xs-3">
+			       <input required type="password" class="form-control" id="confirmPassword" placeholder="Введите пароль ещё раз">
+			     </div>
+			   </div>
+
+			  		
+			  <div class="form-group">
+			    <label class="control-label col-xs-2">Дата рождения</label>
+			    <div class="col-xs-6">
+			      <input type="date" class="form-control" id="birthDate" placeholder="Дата рождения">
+			    </div>
+			  </div> 
+
+			  <div class="form-group">
+			    <label class="control-label col-xs-2" for="phoneNumber">Адрес</label>			    
+			  </div>
+				<div class="form-group">
+				    <label class="control-label col-xs-3" for="inputTown">Город</label>
+				    <div class="col-xs-5">
+				      <input required type="text" class="form-control" id="inputTown" placeholder="Город проживания">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label class="control-label col-xs-3" for="index">Индекс</label>
+				    <div class="col-xs-5">
+				      <input type="number" class="form-control" id="index" placeholder="Индекс">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label class="control-label col-xs-3" for="region">Область</label>
+				    <div class="col-xs-5">
+				      <select class="form-control" id="region">
+				      	<option>Киевская обл.</option>
+				      	<option>Винницкая обл.</option>
+				      	<option>Волынская обл.</option>
+				      	<option>Днепропетровская обл.</option>
+				      	<option>Донецкая обл.</option>
+				      	<option>Житомирская обл.</option>
+				      	<option>Закарпатская обл.</option>
+				      	<option>Запорожская обл.</option>
+				      	<option>Ивано-Франковская обл.</option>		      	
+				      	<option>Кировоградская обл.</option>
+				      	<option>Крым</option>
+				      	<option>Луганская обл.</option>
+				      	<option>Львовская обл.</option>
+				      	<option>Николаевская обл.</option>
+				      	<option>Одесская обл.</option>
+				      	<option>Полтавская обл.</option>
+				      	<option>Ровенская обл.</option>
+				      	<option>Сумская обл.</option>
+				      	<option>Тернопольская обл.</option>
+				      	<option>Харьковская обл.</option>
+				      	<option>Херсонская обл.</option>
+				      	<option>Хмельницкая обл.</option>
+				      	<option>Черкасская обл.</option>
+				      	<option>Черниговская обл.</option>
+				      	<option>Черновицкая обл.</option>
+				      </select> 
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label class="control-label col-xs-3" for="street">Улица</label>
+				    <div class="col-xs-5">
+				      <input type="text" class="form-control" id="street" placeholder="Улица">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label class="control-label col-xs-3" for="buiding">Номер дома</label>
+				    <div class="col-xs-5">
+				      <input type="text" class="form-control" id="buiding" placeholder="Номер дома">
+				    </div>
+			  	</div>
+
+			 
+			  <div class="form-group">
+			    <label class="control-label col-xs-2">Ваши увлечения</label>
+			  	 <div class="checkbox">
+  					<label><input type="checkbox" id="spotr">Спорт </label>
+  					<label><input type="checkbox" id="music">Музыка </label>
+  					<label><input type="checkbox" id="dance">Танцы </label>
+  					<label><input type="checkbox" id="traveling">Туризм </label>
+  					<label><input type="checkbox" id="others">Другое...</label>
+ 				 </div>			    
+			  </div>
+
+	
+			  <div class="form-group">
+			    <label class="control-label col-xs-2">Откуда вы о нас узнали</label>				
+				    <input list="information" class=" input-sm col-xs-4" id="findInformation" placeholder="например услышили по радио">
+					<datalist id="information" >
+					  <option value="Интернет" selected="selected">
+					  <option value="Друзья">
+					  <option value="Реклама на улице">
+					  <option value="Радио">
+					</datalist>					
+			  </div>
+   
+			  
+			  <div class="form-group">
+			    <div class="col-xs-offset-3 col-xs-9">
+			      <input type="submit" class="btn btn-primary" value="Регистрация">
+			      <input type="reset" class="btn btn-default" value="Очистить форму">
+			    </div>
+			  </div>
+			</form>
+		</div>		
+	</body>
+</html>
