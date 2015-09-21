@@ -37,6 +37,7 @@ header {
 .textBlock{
 	.blockParameters;
 	min-height: 90px;
+	min-width: 159px;
 	background-color:@color-light-grey;	
 	color: @color-text-grey;
 }
@@ -52,13 +53,12 @@ header, main {
      position: relative;
 }
 
-.blocks6{
-	width: 19%;
+.blocks6{	
 	display: inline-block;
 }
 
 .blocks6.margin{
-	margin-left: 0.6%;
+	margin-right: 5px;
 }
 
 .blocks89{
@@ -108,12 +108,10 @@ footer {
     .blocks89.margin{
 		margin-left: 0;
 	}
-
-    .blocks6{
-		width: 18.5%;
-		display: inline-block;
-	}
-	.blocks6.margin{
-	margin-left: 0.4%
+ }
+ 
+@media (max-width: 1024px) {
+	.mainBlock{
+		padding: 0;
 	}
 }
