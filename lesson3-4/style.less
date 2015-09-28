@@ -79,25 +79,29 @@ header, main {
 	padding-right: 0;
 }
 
+.col(@count:3){
+-webkit-column-count:@count;  
+    -moz-column-count:@count;  
+    column-count:@count; 
+}
 .colum{
-	-webkit-column-count:2;  
-    -moz-column-count:2;  
-    column-count:2; 
+   .col(2);	
     padding: 1% 2%;
  }
 
  li{
+ 	// это какой список? 
 	margin-left: 15px;
 }
 
 footer {
 	p {
-		margin: 0 0 3px 0;
+		margin: 0 0 3px;
 	}
 }
 
 .footSingleBlock{
-	padding: 0 0 0 0;	
+	padding: 0;	
 }
 
 @media (max-width: 768px) {
