@@ -11,7 +11,8 @@ $(document).ready(function() {
       }
     
     document.body.appendChild(header);
-
+  
+  $(".menu").before ("<input type='button' value='Меню'>");
 
 });
 //var ul = document.createElement('ul');
