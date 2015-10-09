@@ -1,0 +1,19 @@
+@import "reset.css";
+
+.menu, .menu * {
+	border: 1px solid green;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #fff;
+	text-align: center;
+}
+
+.menu {
+	position: relative;
+}
+
+.menu li {
+	display: inline-block;
+	/*position: relative;*/
+}
