@@ -18,6 +18,15 @@ header {
 	}
 }
 
+.container > *:not(main) .row > div{
+	padding-left: 0px;
+	padding-right: 15px;
+}
+
+.container > *:not(main) .row > div:last-child{
+	padding-right: 0px;
+}
+
 .blockParameters(){
 	margin-top: 15px;
 	font-size:13px;
@@ -31,6 +40,7 @@ header {
 	min-height: 60px;
 	background-color:@color-dark-grey;
 	color: #FFFFFF;	
+	padding: 0;
 }
 
 
@@ -108,10 +118,24 @@ footer {
     .blocks89.margin{
 		margin-left: 0;
 	}
+
+	header .row > div{
+		padding-right: 0px !important; 
+	}
+
+
  }
  
 @media (max-width: 1024px) {
 	.mainBlock{
 		padding: 0;
+	}
+
+	.container > *:not(main) .row > div{
+	padding-right: 0;
+	}
+
+	header .row > div:nth-child(2), footer .row > div:first-child {
+	padding-right: 15px;
 	}
 }
