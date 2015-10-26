@@ -31,14 +31,19 @@ $.ajax({
     }
 });
 
-function fillForm(user){    
-    $("#name").val(user.fullName); 
-    $("#login").val(user.login); 
-  	$("input[id^='email']").val(user.mail);   
-    $("input[id^='password").val(user.password);
-    $("#city").val(user.location.city); 
-    $("#zip").val(user.location.zip); 
-    $("#street").val(user.location.street);        
+function fillForm(user){
+ $('form input').each(function(){
+ 	var id = $(this).attr('id')
+ 	$(this).val(user[id])
+ })
+ 
+   // $("#name").val(user.fullName); 
+   // $("#login").val(user.login); 
+  	// $("input[id^='email']").val(user.mail);   
+   // $("input[id^='password").val(user.password);
+   // $("#city").val(user.location.city); 
+   // $("#zip").val(user.location.zip); 
+   // $("#street").val(user.location.street);        
 }
 
 
@@ -49,17 +54,18 @@ $(document).ready(function() {
 	console.log(form);
 	form.onsubmit = function(event){ 		
     	event.preventDefault();
-        var userSend = {
-            name: event.target[0].value,
-            login: event.target[1].value,
-            email: event.target[2].value,
-            password: event.target[4].value,
-            city: event.target[7].value,
-            zip: event.target[8].value,
-            state: event.target[9].value,
-            street: event.target[10].value,
-            building:event.target[11].value 
-        } 
+    	var userSend = $('form').serializeArray();
+        // var userSend = {
+        //     name: event.target[0].value,
+        //     login: event.target[1].value,
+        //     email: event.target[2].value,
+        //     password: event.target[4].value,
+        //     city: event.target[7].value,
+        //     zip: event.target[8].value,
+        //     state: event.target[9].value,
+        //     street: event.target[10].value,
+        //     building:event.target[11].value 
+        // } 
 		sendForm(userSend,'GET') ;
     	sendForm(userSend,'POST');
 	};
@@ -70,9 +76,9 @@ function sendForm(dataSend,typeReguest){
   	url: 'https://robohash.org/',
   	data: dataSend,
   	success: function(data){
-    	console.log("Success");      
+    	console.log("Success", data);      
     	},
-    error:  console.log("Fail")
+    error:  console.log("Fail", fail)
 	});
 }
 
