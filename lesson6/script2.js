@@ -4,7 +4,6 @@ var b = [5, 7, 2]
 
 
 function compare(a, b){
-	
 	var resultate = {};
 
 	if(sum(a) > sum(b)){
