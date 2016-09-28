@@ -12,16 +12,16 @@
             $(".loading").replaceWith( $(".hidden").show());
             
             //задание 2            
-            var ul = $("header ul");
-            var li = $("header li").toArray().reverse();
-            $.each(li, function(index, value){
-                ul.append(value);
+            var $ul = $("header ul");
+            var $li = $ul.toArray().reverse();
+            $.each($li, function(index, value){
+                $ul.append(value);
             })
             
             
             //задание 3  
             var size = $("footer a").size();
-            $("footer a>span").each((function( index ){
+            $("footer a span").each((function( index ){
                 $(this).text("#"+ (size - index));            
             })) ;                             
            
