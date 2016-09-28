@@ -2,6 +2,7 @@
 
 	width: 571px;
 	height: 371px;
+	/*Высоту как правило, не нужно ограничивать - так у вас верства будет более динамична*/
 	position: relative;
 	background-color: #f7f7f7 ;
 	margin:  10% auto;
@@ -11,6 +12,7 @@
 #mainBox{
 	width: 553px;
 	height: 353px;
+	/*Высоту как правило, не нужно ограничивать - так у вас верства будет более динамична*/
 	background-color: white ;
 	margin: 8px auto;
 	border: 1px solid #d9d9d9;
@@ -61,10 +63,12 @@
 
 #mainText p{
 	margin-top: 18px;
+	/*для текстовых элементов лушче использовать padding*/
 }
 
 #lastLine{
 	margin-top: 22px;
+	/*:last-of-type*/
 }
 
 #footer{
@@ -73,12 +77,16 @@
 	color: #949494;
 }
 
-#dataPic{
+.icon {
 	float: left;
 	margin-top: -5px;
 	width: 17px;
     height: 15px;
-    background: url(sprite0.png) no-repeat -40px 0; 
+    background: url(sprite0.png) no-repeat 0 0; 
+}
+
+#dataPic.icon{
+	background-position:-40px 0;
 }
 
 #dataText{
