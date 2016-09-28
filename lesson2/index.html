@@ -14,7 +14,7 @@
 			  <div class="form-group">
 			    <label class="control-label col-xs-2" for="FIO">ФИО*</label>
 			    <div class="col-xs-6">
-			      <input required type="text" class="form-control" id="FIO" placeholder="ФИО">
+			      <input required type="text" class="form-control" id="FIO" placeholder="ФИО" name="name">
 			    </div>
 			  </div>
 
@@ -22,7 +22,7 @@
 			  <div class="form-group">
 			    <label class="control-label col-xs-2" for="login">Логин*</label>
 			    <div class="col-xs-6">
-			      <input required type="text" class="form-control" id="login" placeholder="Логин">
+			      <input required type="text" class="form-control" id="login" placeholder="Логин" name=??>
 			    </div>
 			  </div>
 
@@ -70,8 +70,8 @@
 				    <label class="control-label col-xs-3" for="region">Область</label>
 				    <div class="col-xs-5">
 				      <select class="form-control" id="region">
-				      	<option>Киевская обл.</option>
-				      	<option>Винницкая обл.</option>
+				      	<option value="Kyiv">Киевская обл.</option>
+				      	<option value="...">Винницкая обл.</option>
 				      	<option>Волынская обл.</option>
 				      	<option>Днепропетровская обл.</option>
 				      	<option>Донецкая обл.</option>
@@ -115,8 +115,8 @@
 			  <div class="form-group">
 			    <label class="control-label col-xs-2">Ваши увлечения</label>
 			  	 <div class="checkbox">
-  					<label><input type="checkbox" id="spotr">Спорт </label>
-  					<label><input type="checkbox" id="music">Музыка </label>
+  					<label><input type="checkbox" id="spotr" name="hobby">Спорт </label>
+  					<label><input type="checkbox" id="music" name="hobby">Музыка </label>
   					<label><input type="checkbox" id="dance">Танцы </label>
   					<label><input type="checkbox" id="traveling">Туризм </label>
   					<label><input type="checkbox" id="others">Другое...</label>
